@@ -8,6 +8,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_sort_number">Sort Number</string>
+    <string name="home">Home</string>
+    <string name="sort_number">Sort Number</string>
+
+    <!-- Sort Number String -->
+    <string name="sort_button_text">Sortear</string>
+    <string name="result_text">O número sorteado foi:</string>
+    <string name="title_text">Clique no botão para sortear um número de 0 a 10</string>
 </resources>

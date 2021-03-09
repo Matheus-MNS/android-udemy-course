@@ -1,5 +1,6 @@
 package com.matheus.androidudemycourse.feature.sort_number
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import com.matheus.androidudemycourse.R
 import com.matheus.androidudemycourse.databinding.FragmentHomeBinding
 import com.matheus.androidudemycourse.databinding.FragmentSortNumberBinding
+import kotlin.random.Random
 
 class SortNumberFragment : Fragment() {
 
@@ -25,5 +27,14 @@ class SortNumberFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.sortButton.setOnClickListener {
+            sortNumber()
+        }
+    }
+    @SuppressLint("SetTextI18n")
+    fun sortNumber() {
+
+        val number = Random.nextInt(0, 11)
+        binding.resultTextView.text = "${getString(R.string.result_text)} $number"
     }
 }
