@@ -31,10 +31,9 @@ class SortNumberFragment : Fragment() {
             sortNumber()
         }
     }
-    @SuppressLint("SetTextI18n")
-    fun sortNumber() {
 
+    private fun sortNumber() {
         val number = Random.nextInt(0, 11)
-        binding.resultTextView.text = "${getString(R.string.result_text)} $number"
+        binding.resultTextView.text = getString(R.string.result_text, number.toString())
     }
 }

@@ -13,6 +13,6 @@
 
     <!-- Sort Number String -->
     <string name="sort_button_text">Sortear</string>
-    <string name="result_text">O número sorteado foi:</string>
+    <string name="result_text">O número sorteado foi: %1$s</string>
     <string name="title_text">Clique no botão para sortear um número de 0 a 10</string>
 </resources>

@@ -12,6 +12,5 @@
             android:id="@+id/nav_sort_number"
             android:icon="@drawable/ic_sort_number"
             android:title="@string/sort_number" />
-
     </group>
 </menu>
