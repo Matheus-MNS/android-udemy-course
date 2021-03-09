@@ -1,4 +1,4 @@
-package com.matheus.androidudemycourse.ui.home
+package com.matheus.androidudemycourse.feature.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
