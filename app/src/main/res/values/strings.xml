@@ -10,7 +10,7 @@
 
     <string name="home">Home</string>
     <string name="sort_number">Sort Number</string>
-    <string name="daily_Quotes">Daily Quotes</string>
+    <string name="daily_quotes">Daily Quotes</string>
 
     <!-- Sort Number String -->
     <string name="sort_button_text">Sortear</string>
