@@ -10,9 +10,17 @@
 
     <string name="home">Home</string>
     <string name="sort_number">Sort Number</string>
+    <string name="jokempo">Jokempô</string>
 
     <!-- Sort Number String -->
     <string name="sort_button_text">Sortear</string>
     <string name="result_text">O número sorteado foi: %1$s</string>
     <string name="title_text">Clique no botão para sortear um número de 0 a 10</string>
+
+    <!--    Jokempo String -->
+    <string name="choice_app_text">Escolha do App</string>
+    <string name="instruction_text">Escolha sua opção:</string>
+    <string name="user_lose_text">Você Perdeu !!</string>
+    <string name="user_wins_text">Você Ganhou !!</string>
+    <string name="draw_text">Empate !!</string>
 </resources>

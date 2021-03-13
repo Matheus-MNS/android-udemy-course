@@ -12,5 +12,9 @@
             android:id="@+id/nav_sort_number"
             android:icon="@drawable/ic_sort_number"
             android:title="@string/sort_number" />
+        <item
+            android:id="@+id/nav_jokempo"
+            android:icon="@drawable/ic_jokempo"
+            android:title="@string/jokempo" />
     </group>
 </menu>
