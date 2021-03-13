@@ -3,7 +3,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".feature.jokempo.JokempoFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/choiceAppTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/choice_app_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/placeHolderOpponentImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/choiceAppTextView"
+        app:srcCompat="@drawable/standard" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/instruction_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/placeHolderOpponentImageView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/rockImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/paperImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/instructionTextView"
+        app:srcCompat="@drawable/rock" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/paperImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/scissorsImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rockImageView"
+        app:layout_constraintTop_toBottomOf="@id/instructionTextView"
+        app:srcCompat="@drawable/paper" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/scissorsImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/paperImageView"
+        app:layout_constraintTop_toBottomOf="@id/instructionTextView"
+        app:srcCompat="@drawable/scissors" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
