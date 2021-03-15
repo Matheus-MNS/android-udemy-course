@@ -20,5 +20,10 @@
         android:name="com.matheus.androidudemycourse.feature.daily_quotes.DailyQuotesFragment"
         android:label="@string/daily_quotes"
         tools:layout="@layout/fragment_daily_quotes" />
+    <fragment
+        android:id="@+id/nav_jokempo"
+        android:name="com.matheus.androidudemycourse.feature.jokempo.JokempoFragment"
+        android:label="@string/jokempo"
+        tools:layout="@layout/fragment_jokempo" />
 
 </navigation>
