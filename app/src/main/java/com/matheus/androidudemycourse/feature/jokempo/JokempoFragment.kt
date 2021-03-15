@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.matheus.androidudemycourse.R
 import com.matheus.androidudemycourse.databinding.FragmentJokempoBinding
+import com.matheus.androidudemycourse.feature.jokempo.JokempoEnum.*
 import kotlin.random.Random
 
 class JokempoFragment : Fragment() {
@@ -31,48 +32,67 @@ class JokempoFragment : Fragment() {
     private fun setupClick() {
 
         binding.rockImageView.setOnClickListener {
-            optionSelected(JokempoEnum.ROCK)
+            jokempoResult(ROCK)
         }
-
         binding.paperImageView.setOnClickListener {
-            optionSelected(JokempoEnum.PAPER)
+            jokempoResult(PAPER)
         }
-
         binding.scissorsImageView.setOnClickListener {
-            optionSelected(JokempoEnum.SCISSOR)
+            jokempoResult(SCISSOR)
         }
     }
 
-    private fun optionSelected(playerChoice: JokempoEnum) {
+    private fun appOpition(): JokempoEnum {
 
         val r = Random.nextInt(0, 3)
-        val optionList = listOf(JokempoEnum.ROCK, JokempoEnum.PAPER, JokempoEnum.SCISSOR)
-        val appChoice = optionList[r]
-
+        val optionsList = listOf(ROCK, PAPER, SCISSOR)
+        val appChoice = optionsList[r]
         when (appChoice) {
 
-            JokempoEnum.ROCK -> binding.placeHolderOpponentImageView.setImageResource(R.drawable.rock)
-            JokempoEnum.PAPER -> binding.placeHolderOpponentImageView.setImageResource(R.drawable.paper)
-            JokempoEnum.SCISSOR -> binding.placeHolderOpponentImageView.setImageResource(R.drawable.scissors)
-
+            ROCK -> binding.placeHolderOpponentImageView.setImageResource(R.drawable.rock)
+            PAPER -> binding.placeHolderOpponentImageView.setImageResource(R.drawable.paper)
+            SCISSOR -> binding.placeHolderOpponentImageView.setImageResource(R.drawable.scissors)
         }
+        return appChoice
+    }
+
+    private fun choiceComparison(playerChoice: JokempoEnum): Int {
+
+        val winner: Int
+        val appChoice = appOpition()
         if ( //App Wins
-            (appChoice == JokempoEnum.SCISSOR && playerChoice == JokempoEnum.PAPER) ||
-            (appChoice == JokempoEnum.PAPER && playerChoice == JokempoEnum.ROCK) ||
-            (appChoice == JokempoEnum.ROCK && playerChoice == JokempoEnum.SCISSOR)
+            (appChoice == SCISSOR && playerChoice == PAPER) ||
+            (appChoice == PAPER && playerChoice == ROCK) ||
+            (appChoice == ROCK && playerChoice == SCISSOR)
         ) {
-            binding.instructionTextView.text = getString(R.string.user_lose_text)
+            winner = 1
+            return winner
 
         } else if ( //User Wins
-            (playerChoice == JokempoEnum.SCISSOR && appChoice == JokempoEnum.PAPER) ||
-            (playerChoice == JokempoEnum.PAPER && appChoice == JokempoEnum.ROCK) ||
-            (playerChoice == JokempoEnum.ROCK && appChoice == JokempoEnum.SCISSOR)
+            (playerChoice == SCISSOR && appChoice == PAPER) ||
+            (playerChoice == PAPER && appChoice == ROCK) ||
+            (playerChoice == ROCK && appChoice == SCISSOR)
         ) {
-
-            binding.instructionTextView.text = getString(R.string.user_wins_text)
+            winner = 2
+            return winner
 
         } else { //Draw
-            binding.instructionTextView.text = getString(R.string.draw_text)
+            winner = 3
+            return winner
+        }
+    }
+
+    private fun jokempoResult(playerChoice: JokempoEnum) {
+        when (choiceComparison(playerChoice)) {
+            1 -> { //App Wins
+                binding.instructionTextView.text = getString(R.string.user_lose_text)
+            }
+            2 -> { //User Wins
+                binding.instructionTextView.text = getString(R.string.user_wins_text)
+            }
+            3 -> { //Draw
+                binding.instructionTextView.text = getString(R.string.draw_text)
+            }
         }
     }
 }
