@@ -10,9 +10,14 @@
 
     <string name="home">Home</string>
     <string name="sort_number">Sort Number</string>
+    <string name="daily_quotes">Daily Quotes</string>
 
     <!-- Sort Number String -->
     <string name="sort_button_text">Sortear</string>
     <string name="result_text">O número sorteado foi: %1$s</string>
     <string name="title_text">Clique no botão para sortear um número de 0 a 10</string>
+
+    <!-- Daily Quotes String -->
+    <string name="new_quotes_button_text">Nova Frase</string>
+    <string name="quotes_text" />
 </resources>

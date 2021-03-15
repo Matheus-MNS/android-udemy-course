@@ -9,8 +9,13 @@
             android:icon="@drawable/ic_home"
             android:title="@string/home" />
         <item
+            android:id="@+id/nav_daily_quotes"
+            android:icon="@drawable/ic_quotes"
+            android:title="@string/daily_quotes" />
+        <item
             android:id="@+id/nav_sort_number"
             android:icon="@drawable/ic_sort_number"
             android:title="@string/sort_number" />
+
     </group>
 </menu>
