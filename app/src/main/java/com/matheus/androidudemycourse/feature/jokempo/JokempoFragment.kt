@@ -32,67 +32,49 @@ class JokempoFragment : Fragment() {
     private fun setupClick() {
 
         binding.rockImageView.setOnClickListener {
-            jokempoResult(ROCK)
+            choiceComparison(ROCK)
         }
         binding.paperImageView.setOnClickListener {
-            jokempoResult(PAPER)
+            choiceComparison(PAPER)
         }
         binding.scissorsImageView.setOnClickListener {
-            jokempoResult(SCISSOR)
+            choiceComparison(SCISSOR)
         }
     }
 
-    private fun appOpition(): JokempoEnum {
-
+    private fun setAppChoice(): JokempoEnum {
         val r = Random.nextInt(0, 3)
         val optionsList = listOf(ROCK, PAPER, SCISSOR)
         val appChoice = optionsList[r]
-        when (appChoice) {
+        setOpponentImageView(appChoice)
 
+        return appChoice
+    }
+
+    private fun setOpponentImageView(appChoice: JokempoEnum) {
+        when (appChoice) {
             ROCK -> binding.placeHolderOpponentImageView.setImageResource(R.drawable.rock)
             PAPER -> binding.placeHolderOpponentImageView.setImageResource(R.drawable.paper)
             SCISSOR -> binding.placeHolderOpponentImageView.setImageResource(R.drawable.scissors)
         }
-        return appChoice
     }
 
-    private fun choiceComparison(playerChoice: JokempoEnum): Int {
-
-        val winner: Int
-        val appChoice = appOpition()
+    private fun choiceComparison(playerChoice: JokempoEnum) {
+        val appChoice = setAppChoice()
         if ( //App Wins
             (appChoice == SCISSOR && playerChoice == PAPER) ||
             (appChoice == PAPER && playerChoice == ROCK) ||
             (appChoice == ROCK && playerChoice == SCISSOR)
         ) {
-            winner = 1
-            return winner
-
+            binding.instructionTextView.text = getString(R.string.user_lose_text)
         } else if ( //User Wins
             (playerChoice == SCISSOR && appChoice == PAPER) ||
             (playerChoice == PAPER && appChoice == ROCK) ||
             (playerChoice == ROCK && appChoice == SCISSOR)
         ) {
-            winner = 2
-            return winner
-
+            binding.instructionTextView.text = getString(R.string.user_wins_text)
         } else { //Draw
-            winner = 3
-            return winner
-        }
-    }
-
-    private fun jokempoResult(playerChoice: JokempoEnum) {
-        when (choiceComparison(playerChoice)) {
-            1 -> { //App Wins
-                binding.instructionTextView.text = getString(R.string.user_lose_text)
-            }
-            2 -> { //User Wins
-                binding.instructionTextView.text = getString(R.string.user_wins_text)
-            }
-            3 -> { //Draw
-                binding.instructionTextView.text = getString(R.string.draw_text)
-            }
+            binding.instructionTextView.text = getString(R.string.draw_text)
         }
     }
 }
