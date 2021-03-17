@@ -20,5 +20,9 @@
             android:id="@+id/nav_sort_number"
             android:icon="@drawable/ic_sort_number"
             android:title="@string/sort_number" />
+        <item
+            android:id="@+id/nav_alcohol_or_gasoline"
+            android:icon="@drawable/ic_fuel"
+            android:title="@string/alcohol_or_gasoline" />
     </group>
 </menu>

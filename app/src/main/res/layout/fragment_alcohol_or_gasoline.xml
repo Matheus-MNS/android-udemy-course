@@ -80,19 +80,18 @@
         app:layout_constraintTop_toBottomOf="@+id/gasolineTextInputLayout" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/resultTextView"
+        android:id="@+id/resultAlcoholOrGasolineTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:gravity="center"
-        android:text="@string/result_text"
+        android:text="@string/result_text_alcohol_or_gasoline"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calculatorButtom"
         app:layout_constraintVertical_bias="0" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
