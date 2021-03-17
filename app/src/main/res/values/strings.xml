@@ -12,6 +12,7 @@
     <string name="sort_number">Sort Number</string>
     <string name="daily_quotes">Daily Quotes</string>
     <string name="jokempo">Jokempô</string>
+    <string name="alcohol_or_gasoline">Alcool ou Gasolina</string>
 
     <!-- Sort Number String -->
     <string name="sort_button_text">Sortear</string>
@@ -28,4 +29,14 @@
     <string name="user_lose_text">Você Perdeu !!</string>
     <string name="user_wins_text">Você Ganhou !!</string>
     <string name="draw_text">Empate !!</string>
+
+    <!--    Alcohol or Gasoline String -->
+    <string name="info_text">Saiba a melhor opção de abastecimento do seu carro!</string>
+    <string name="alcohol_hit">Preço álcool ex: 1.90</string>
+    <string name="gasoline_hit">Preço gasolina ex: 3.90</string>
+    <string name="result_text_alcohol_or_gasoline">Resultado</string>
+    <string name="compute_hit">Calcular</string>
+    <string name="gasoline_better_text">Melhor abastecer com Gasolina</string>
+    <string name="alcohol_better_text">Melhor abastecer com Álcool</string>
+    <string name="empty_fields_text">Preencha os preços priemiro!</string>
 </resources>
