@@ -11,8 +11,6 @@ import com.matheus.androidudemycourse.databinding.FragmentAlcoholOrGasolineBindi
 class AlcoholOrGasolineFragment : Fragment() {
 
     private lateinit var binding: FragmentAlcoholOrGasolineBinding
-    lateinit var priceAlcohol: String
-    lateinit var priceGasoline: String
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,43 +24,43 @@ class AlcoholOrGasolineFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        priceAlcohol = binding.alcoholTextInputEditText.text.toString()
-        priceGasoline = binding.gasolineTextInputEditText.text.toString()
-
         setupClick()
     }
 
     private fun setupClick() {
         binding.calculatorButtom.setOnClickListener {
-            fuelPriceCalculator()
+            calculateFuelPrice()
         }
     }
 
-    private fun fuelPriceCalculator() {
-
-        val validate = validateInformation(priceAlcohol, priceGasoline)
-        if (validate) {
-            val aux = priceAlcohol.toDouble() / priceGasoline.toDouble()
-            if (aux >= 0.7) {
-                binding.resultAlcoholOrGasolineTextView.text =
-                    getString(R.string.gasoline_better_text)
-            } else {
-                binding.resultAlcoholOrGasolineTextView.text =
-                    getString(R.string.alcohol_better_text)
-            }
+    private fun showResult(value: Double) {
+        if (value >= 0.7) {
+            binding.resultAlcoholOrGasolineTextView.text =
+                getString(R.string.gasoline_better_text)
         } else {
+            binding.resultAlcoholOrGasolineTextView.text =
+                getString(R.string.alcohol_better_text)
+        }
+    }
+
+    private fun calculateFuelPrice() {
+        if (validateInformation()) {
+            val value = binding.alcoholTextInputEditText.text.toString()
+                .toDouble() / binding.gasolineTextInputEditText.text.toString().toDouble()
+            showResult(value)
+        }
+    }
+
+    private fun validateInformation(): Boolean {
+        val validation: Boolean
+        if (binding.alcoholTextInputEditText.text.toString().isNotBlank() &&
+            binding.gasolineTextInputEditText.text.toString().isNotBlank()
+        ) {
+            validation = true
+        } else {
+            validation = false
             binding.resultAlcoholOrGasolineTextView.text = getString(R.string.empty_fields_text)
         }
-    }
-
-    private fun validateInformation(pAlcohol: String?, pGasoline: String?): Boolean {
-
-        var validate = true
-        if (pAlcohol.isNullOrBlank()) {
-            validate = false
-        } else if (pGasoline.isNullOrBlank()) {
-            validate = false
-        }
-        return validate
+        return validation
     }
 }
