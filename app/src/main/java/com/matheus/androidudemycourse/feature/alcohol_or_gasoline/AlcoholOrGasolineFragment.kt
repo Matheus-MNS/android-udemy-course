@@ -16,7 +16,7 @@ class AlcoholOrGasolineFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentAlcoholOrGasolineBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -33,6 +33,14 @@ class AlcoholOrGasolineFragment : Fragment() {
         }
     }
 
+    private fun calculateFuelPrice() {
+        if (validateInformation()) {
+            val value = binding.alcoholTextInputEditText.text.toString()
+                .toDouble() / binding.gasolineTextInputEditText.text.toString().toDouble()
+            showResult(value)
+        }
+    }
+
     private fun showResult(value: Double) {
         if (value >= 0.7) {
             binding.resultAlcoholOrGasolineTextView.text =
@@ -40,14 +48,6 @@ class AlcoholOrGasolineFragment : Fragment() {
         } else {
             binding.resultAlcoholOrGasolineTextView.text =
                 getString(R.string.alcohol_better_text)
-        }
-    }
-
-    private fun calculateFuelPrice() {
-        if (validateInformation()) {
-            val value = binding.alcoholTextInputEditText.text.toString()
-                .toDouble() / binding.gasolineTextInputEditText.text.toString().toDouble()
-            showResult(value)
         }
     }
 
