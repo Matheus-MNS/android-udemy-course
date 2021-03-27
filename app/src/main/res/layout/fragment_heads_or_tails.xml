@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:src="@drawable/heads_or_tails_logo"
-        app:layout_constraintBottom_toTopOf="@+id/playButtom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,6 +29,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/headsOrTailsLogoImageView"
-        tools:text="JOGAR" />
+        android:text="JOGAR" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

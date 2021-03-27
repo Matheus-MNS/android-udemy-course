@@ -14,18 +14,17 @@
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/heads_coin" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/backButon"
+        android:id="@+id/returnButon"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="25dp"
         android:background="@drawable/ic_back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/resultCoinImageView" />
+        app:layout_constraintTop_toBottomOf="@id/resultCoinImageView"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

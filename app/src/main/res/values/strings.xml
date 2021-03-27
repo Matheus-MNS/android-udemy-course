@@ -41,5 +41,5 @@
     <string name="empty_fields_text">Preencha os preços primeiro !</string>
 
     <!--    Heads or Tails -->
-    <string name="heads_or_tail">Cara ou Coroa</string>
+    <string name="heads_or_tails">Cara ou Coroa</string>
 </resources>
