@@ -5,31 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/red"
-    tools:context=".feature.heads_or_tails.HeadsOrTailsFragment">
+    tools:context=".feature.heads_or_tails.HeadsOrTailsResultFragment">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/headsOrTailsLogoImageView"
+        android:id="@+id/resultCoinImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:src="@drawable/heads_or_tails_logo"
-        app:layout_constraintBottom_toTopOf="@+id/playButtom"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/heads_coin" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/playButtom"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="35dp"
-        android:background="@color/white"
-        android:textColor="@color/red"
-        android:textSize="25sp"
+        android:id="@+id/backButon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/ic_back"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/headsOrTailsLogoImageView"
-        tools:text="JOGAR" />
+        app:layout_constraintTop_toBottomOf="@id/resultCoinImageView" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
