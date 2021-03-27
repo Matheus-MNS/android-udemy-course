@@ -39,4 +39,7 @@
     <string name="gasoline_better_text">Melhor abastecer com Gasolina</string>
     <string name="alcohol_better_text">Melhor abastecer com Álcool</string>
     <string name="empty_fields_text">Preencha os preços primeiro !</string>
+
+    <!--    Heads or Tails -->
+    <string name="heads_or_tail">Cara ou Coroa</string>
 </resources>

@@ -9,6 +9,10 @@
             android:icon="@drawable/ic_home"
             android:title="@string/home" />
         <item
+            android:id="@+id/nav_heads_or_tail"
+            android:icon="@drawable/ic_coin_head_tail"
+            android:title="@string/heads_or_tail" />
+        <item
             android:id="@+id/nav_alcohol_or_gasoline"
             android:icon="@drawable/ic_fuel"
             android:title="@string/alcohol_or_gasoline" />
