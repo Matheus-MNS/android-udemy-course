@@ -25,5 +25,10 @@
         android:name="com.matheus.androidudemycourse.feature.jokempo.JokempoFragment"
         android:label="@string/jokempo"
         tools:layout="@layout/fragment_jokempo" />
+    <fragment
+        android:id="@+id/nav_alcohol_or_gasoline"
+        android:name="com.matheus.androidudemycourse.feature.alcohol_or_gasoline.AlcoholOrGasolineFragment"
+        android:label="@string/alcohol_or_gasoline"
+        tools:layout="@layout/fragment_alcohol_or_gasoline" />
 
 </navigation>
