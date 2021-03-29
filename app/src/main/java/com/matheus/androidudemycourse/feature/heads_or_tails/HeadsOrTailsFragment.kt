@@ -31,6 +31,7 @@ class HeadsOrTailsFragment : Fragment() {
 
             activity?.supportFragmentManager?.beginTransaction()
                 ?.replace(R.id.nav_host_fragment, HeadsOrTailsResultFragment())
+                ?.addToBackStack("HeadsOrTailsResultFragment")
                 ?.commit()
         }
     }
