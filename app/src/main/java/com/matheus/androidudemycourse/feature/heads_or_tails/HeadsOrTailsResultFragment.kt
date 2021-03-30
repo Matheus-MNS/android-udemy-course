@@ -31,7 +31,7 @@ class HeadsOrTailsResultFragment : Fragment() {
         flipCoin()
 
         binding.returnButon.setOnClickListener {
-          popBackStack()
+            popBackStack()
         }
     }
 
@@ -45,15 +45,16 @@ class HeadsOrTailsResultFragment : Fragment() {
     }
 
     private fun handleOnBackPressed() {
-
-        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                popBackStack()
-            }
-        })
+        activity?.onBackPressedDispatcher?.addCallback(
+            viewLifecycleOwner,
+            object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    popBackStack()
+                }
+            })
     }
 
-    private fun popBackStack(){
+    private fun popBackStack() {
         activity?.supportFragmentManager?.popBackStack(
             "HeadsOrTailsResultFragment",
             FragmentManager.POP_BACK_STACK_INCLUSIVE
