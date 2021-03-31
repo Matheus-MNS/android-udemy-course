@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/playButtom"
+        android:id="@+id/play_button"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="35dp"
@@ -29,6 +29,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/headsOrTailsLogoImageView"
-        android:text="JOGAR" />
+        android:text="@string/text_button_play" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

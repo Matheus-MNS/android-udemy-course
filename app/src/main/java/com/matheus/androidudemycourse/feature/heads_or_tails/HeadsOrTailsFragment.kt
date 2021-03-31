@@ -5,10 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.viewbinding.ViewBinding
 import com.matheus.androidudemycourse.R
 import com.matheus.androidudemycourse.databinding.FragmentHeadsOrTailsBinding
-import kotlin.random.Random
 
 
 class HeadsOrTailsFragment : Fragment() {
@@ -27,7 +25,7 @@ class HeadsOrTailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.playButtom.setOnClickListener {
+        binding.playButton.setOnClickListener {
 
             activity?.supportFragmentManager?.beginTransaction()
                 ?.replace(R.id.nav_host_fragment, HeadsOrTailsResultFragment())

@@ -42,4 +42,5 @@
 
     <!--    Heads or Tails -->
     <string name="heads_or_tails">Cara ou Coroa</string>
+    <string name="text_button_play">JOGAR</string>
 </resources>

@@ -36,9 +36,9 @@ class HeadsOrTailsResultFragment : Fragment() {
     }
 
     private fun flipCoin() {
-        val r = Random.nextInt(0, 5)
+        val coinSide = Random.nextInt(0, 5)
 
-        return if (r == 0)
+        return if (coinSide == 0)
             binding.resultCoinImageView.setImageResource(R.drawable.heads_coin)
         else
             binding.resultCoinImageView.setImageResource(R.drawable.tails_coin)
