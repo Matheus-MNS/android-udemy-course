@@ -8,7 +8,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.google.android.material.snackbar.Snackbar
 import com.matheus.androidudemycourse.R
 import com.matheus.androidudemycourse.databinding.ActivityAtmConsultancyBinding
 
@@ -23,7 +22,7 @@ class AtmConsultancy : AppCompatActivity() {
         binding = ActivityAtmConsultancyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.appBarMainAtm.toolbarAtm)
+        setSupportActionBar(binding.aapBarMainAtm.toolbarAtm)
 
 //        binding.appBarMainAtm.fab.setOnClickListener { view ->
 //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
@@ -41,12 +40,12 @@ class AtmConsultancy : AppCompatActivity() {
             ), binding.drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
-        binding.navView.setupWithNavController(navController)
+        binding.navAtmView.setupWithNavController(navController)
 
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.main, menu)
+        menuInflater.inflate(R.menu.atm, menu)
         return true
     }
 
