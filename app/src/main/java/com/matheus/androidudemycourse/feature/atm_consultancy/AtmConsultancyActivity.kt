@@ -12,7 +12,7 @@ import com.matheus.androidudemycourse.R
 import com.matheus.androidudemycourse.databinding.ActivityAtmConsultancyBinding
 
 
-class AtmConsultancy : AppCompatActivity() {
+class AtmConsultancyActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityAtmConsultancyBinding
@@ -21,7 +21,6 @@ class AtmConsultancy : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAtmConsultancyBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         setSupportActionBar(binding.aapBarMainAtm.toolbarAtm)
 
 //        binding.appBarMainAtm.fab.setOnClickListener { view ->
@@ -29,15 +28,13 @@ class AtmConsultancy : AppCompatActivity() {
 //                .setAction("Action", null).show()
 //        }
 
-        val navController = findNavController(R.id.nav_host_fragment)
+        val navController = findNavController(R.id.nav_host_atm_fragment)
+
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home,
-                R.id.nav_alcohol_or_gasoline,
-                R.id.nav_jokempo,
-                R.id.nav_daily_quotes,
-                R.id.nav_sort_number
-            ), binding.drawerLayout
+                R.id.nav_atm_main,
+                R.id.nav_about_atm
+            ), binding.drawerLayoutAtm
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         binding.navAtmView.setupWithNavController(navController)
@@ -50,7 +47,7 @@ class AtmConsultancy : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment)
+        val navController = findNavController(R.id.nav_host_atm_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 }

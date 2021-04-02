@@ -42,5 +42,11 @@
     <string name="empty_fields_text">Preencha os preços primeiro !</string>
 
     <!--    ATM Consultancy String -->
-    <string name="nav_header_atm_title">ATM Consultancy</string>
+    <string name="atm_title">ATM Consultoria</string>
+    <string name="atm_subtitle">atendimento@atmconsultoria.com.br</string>
+    <string name="main">Principal</string>
+    <string name="atm_about">Sobre</string>
+    <string name="atm_service">Serviços</string>
+    <string name="atm_clients">Clientes</string>
+    <string name="atm_contact">Contato</string>
 </resources>

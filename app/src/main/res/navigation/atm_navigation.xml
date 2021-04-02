@@ -3,7 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_atm_view">
+    app:startDestination="@+id/nav_atm_main">
 
-
+    <fragment
+        android:id="@+id/nav_atm_main"
+        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.main.AtmMainFragment"
+        android:label="@string/atm_title"
+        tools:layout="@layout/fragment_atm_main" />
+    <fragment
+        android:id="@+id/nav_services_atm"
+        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.services.ServicesFragment"
+        android:label="@string/atm_service"
+        tools:layout="@layout/fragment_services" />
+    <fragment
+        android:id="@+id/nav_about_atm"
+        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.about.AboutAtmFragment"
+        android:label="@string/atm_about"
+        tools:layout="@layout/fragment_about_atm" />
+    <fragment
+        android:id="@+id/nav_clients_atm"
+        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.clients.ClientsFragment"
+        android:label="@string/atm_clients"
+        tools:layout="@layout/fragment_clients" />
 </navigation>

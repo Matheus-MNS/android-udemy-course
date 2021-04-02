@@ -5,5 +5,20 @@
 
     <group android:checkableBehavior="single">
 
+        <item
+            android:id="@+id/nav_atm_main"
+            android:icon="@drawable/ic_main_atm"
+            android:title="@string/main" />
+
+        <item
+            android:id="@+id/nav_about_atm"
+            android:icon="@drawable/ic_about"
+            android:title="@string/atm_about" />
+
+        <item
+            android:id="@+id/nav_services_atm"
+            android:icon="@drawable/ic_services"
+            android:title="@string/atm_service" />
+
     </group>
 </menu>
