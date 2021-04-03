@@ -3,5 +3,5 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".feature.atm_consultancy.fragments.about.AboutAtmFragment">
+    tools:context=".feature.atm_consultancy.fragments.contact.ContactAtmFragment">
 </androidx.constraintlayout.widget.ConstraintLayout>

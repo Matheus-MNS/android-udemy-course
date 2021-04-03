@@ -33,8 +33,11 @@ class AtmConsultancyActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_atm_main,
+                R.id.nav_services_atm,
+                R.id.nav_clients_atm,
+                R.id.nav_contact_atm,
                 R.id.nav_about_atm
-            ), binding.drawerLayoutAtm
+                ), binding.drawerLayoutAtm
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         binding.navAtmView.setupWithNavController(navController)
