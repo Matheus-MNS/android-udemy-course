@@ -5,6 +5,10 @@ import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
 import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.navigation.ui.*
@@ -32,6 +36,7 @@ class MainActivity : AppCompatActivity() {
             setOf(
                 R.id.nav_home,
                 R.id.nav_atm_consultancy,
+                R.id.nav_heads_or_tails,
                 R.id.nav_alcohol_or_gasoline,
                 R.id.nav_jokempo,
                 R.id.nav_daily_quotes,
