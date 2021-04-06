@@ -47,7 +47,7 @@
 
     <!--    ATM Consultancy String -->
     <string name="atm_title">ATM Consultoria</string>
-    <string name="atm_subtitle">atendimento@atmconsultoria.com.br</string>
+    <string name="atm_email">atendimento@atmconsultoria.com.br</string>
     <string name="main">Principal</string>
     <string name="atm_about">Sobre</string>
     <string name="atm_service">Serviços</string>
@@ -59,5 +59,9 @@
     <string name="clients_text">Em mais de 15 anos de existência a ATM acumula experiência em serviços de consultoria para empresas nacionais e multinacionais de diversos portes, tendo atendido mais de 1000 empresas desde sua abertura.</string>
     <string name="submenu_title">Entre em contato</string>
     <string name="share">Compartilhar</string>
+    <string name="atm_description">A ATM Consultoria tem como missão apoiar organizações que desejam alcaçar o sucesso atráves da excelência em gestão e da busca pela qualidade</string>
     <string name="exit">Sair</string>
+    <string name="group_contact">Envie um email</string>
+    <string name="group_social">Redes socias</string>
+
 </resources>

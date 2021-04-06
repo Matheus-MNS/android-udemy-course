@@ -1,22 +1,30 @@
 package com.matheus.androidudemycourse.feature.atm_consultancy.fragments.about
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.matheus.androidudemycourse.databinding.FragmentAboutAtmBinding
+import androidx.fragment.app.Fragment
+import com.matheus.androidudemycourse.R
+import mehdi.sakout.aboutpage.AboutPage
 
 class AboutAtmFragment : Fragment() {
-
-    private lateinit var binding: FragmentAboutAtmBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentAboutAtmBinding.inflate(inflater, container, false)
-        return binding.root
+        return AboutPage(context)
+            .isRTL(false)
+            .enableDarkMode(false)
+            .setImage(R.drawable.logo_atm)
+            .setDescription(getString(R.string.atm_description))
+            .addGroup(getString(R.string.submenu_title))
+            .addEmail(getString(R.string.atm_email))
+            .addGroup(getString(R.string.group_social))
+            .addFacebook("matheus.mendes.33633")
+            .addGitHub("Matheus-MNS")
+            .create()
     }
 }
