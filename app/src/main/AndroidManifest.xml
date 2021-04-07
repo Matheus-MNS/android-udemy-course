@@ -19,6 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".feature.media_player.MediaPlayerActivity"
+            android:label="@string/media_player"
+            android:theme="@style/Theme.AndroidUdemyCourse" />
     </application>
 
 </manifest>
