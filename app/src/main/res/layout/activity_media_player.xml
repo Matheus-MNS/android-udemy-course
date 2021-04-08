@@ -14,17 +14,17 @@
         android:text="Execultar Musicas"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/play2_button"
+        app:layout_constraintBottom_toTopOf="@id/musicButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/play2_button"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/musicButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="25dp"
-        android:src="@drawable/play"
+        android:src="@drawable/ic_music"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/playMusicTextView" />
@@ -33,12 +33,12 @@
         android:id="@+id/mainFrameLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/musicButton"
         app:layout_constraintVertical_bias="0.0">
 
     </FrameLayout>

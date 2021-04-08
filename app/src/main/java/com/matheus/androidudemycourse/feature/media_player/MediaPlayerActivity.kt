@@ -15,7 +15,7 @@ class MediaPlayerActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.play2Button.setOnClickListener {
+        binding.musicButton.setOnClickListener {
             supportFragmentManager.beginTransaction().apply {
                 replace(R.id.mainFrameLayout,MusicPlayerFragments())
                 addToBackStack(null)
