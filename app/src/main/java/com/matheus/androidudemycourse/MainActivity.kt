@@ -1,5 +1,6 @@
 package com.matheus.androidudemycourse
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
@@ -7,9 +8,11 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
+import androidx.navigation.ui.*
 import com.matheus.androidudemycourse.databinding.ActivityMainBinding
+import com.matheus.androidudemycourse.feature.atm_consultancy.AtmConsultancyActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_home,
+                R.id.nav_atm_consultancy,
                 R.id.nav_heads_or_tails,
                 R.id.nav_alcohol_or_gasoline,
                 R.id.nav_jokempo,
@@ -39,7 +43,17 @@ class MainActivity : AppCompatActivity() {
             ), binding.drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
-        binding.navView.setupWithNavController(navController)
+        binding.navView.setNavigationItemSelectedListener { menuItem ->
+            val id = menuItem.itemId
+            if (id == R.id.nav_atm_consultancy) {
+                val intent = Intent(this, AtmConsultancyActivity::class.java)
+                startActivity(intent)
+            } else {
+                NavigationUI.onNavDestinationSelected(menuItem, navController);
+            }
+            binding.drawerLayout.closeDrawer(GravityCompat.START)
+            true
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
