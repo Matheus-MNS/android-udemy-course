@@ -6,8 +6,12 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_home"
+            android:icon="@drawable/ic_main"
             android:title="@string/home" />
+        <item
+            android:id="@+id/nav_atm_consultancy"
+            android:icon="@drawable/ic_business"
+            android:title="@string/atm_title" />
         <item
             android:id="@+id/nav_heads_or_tails"
             android:icon="@drawable/ic_coin_head_tail"

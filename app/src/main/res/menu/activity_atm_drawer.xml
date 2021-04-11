@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_atm_main"
+            android:icon="@drawable/ic_main_atm"
+            android:title="@string/main" />
+        <item
+            android:id="@+id/nav_services_atm"
+            android:icon="@drawable/ic_services"
+            android:title="@string/atm_service" />
+        <item
+            android:id="@+id/nav_clients_atm"
+            android:icon="@drawable/ic_clients"
+            android:title="@string/atm_customer" />
+    </group>
+
+    <item android:title="@string/submenu_title">
+        <menu>
+            <item
+                android:id="@+id/nav_contact_atm"
+                android:icon="@drawable/ic_email"
+                android:title="@string/atm_contact" />
+            <item
+                android:id="@+id/nav_about_atm"
+                android:icon="@drawable/ic_about"
+                android:title="@string/atm_about" />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_atm_exit"
+                android:icon="@drawable/ic_exit"
+                android:title="@string/exit"/>
+        </menu>
+    </item>
+</menu>
+
