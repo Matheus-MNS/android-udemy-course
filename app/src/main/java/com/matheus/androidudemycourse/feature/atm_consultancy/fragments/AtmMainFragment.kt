@@ -1,4 +1,4 @@
-package com.matheus.androidudemycourse.feature.atm_consultancy.fragments.main
+package com.matheus.androidudemycourse.feature.atm_consultancy.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

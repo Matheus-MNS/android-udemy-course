@@ -1,4 +1,4 @@
-package com.matheus.androidudemycourse.feature.atm_consultancy.fragments.about
+package com.matheus.androidudemycourse.feature.atm_consultancy.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

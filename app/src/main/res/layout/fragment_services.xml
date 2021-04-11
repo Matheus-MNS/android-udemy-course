@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".feature.atm_consultancy.fragments.services.ServicesFragment">
+    tools:context=".feature.atm_consultancy.fragments.ServicesFragment">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/service1TextView"
+        android:id="@+id/firstServiceTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
-        android:text="@string/service_title_1"
+        android:text="@string/first_service_title"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/serviceDescription1TextView"
+        android:id="@+id/firstServiceDescriptionTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -29,22 +29,22 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/service1TextView" />
+        app:layout_constraintTop_toBottomOf="@id/firstServiceTextView" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/service2TextView"
+        android:id="@+id/secondServiceTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/service_title_2"
+        android:text="@string/second_service_title"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/serviceDescription1TextView" />
+        app:layout_constraintTop_toBottomOf="@id/firstServiceDescriptionTextView" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/serviceDescription2TextView"
+        android:id="@+id/secondServiceDescriptionTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -54,5 +54,5 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/service2TextView" />
+        app:layout_constraintTop_toBottomOf="@id/secondServiceTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

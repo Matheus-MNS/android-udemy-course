@@ -7,27 +7,27 @@
 
     <fragment
         android:id="@+id/nav_atm_main"
-        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.main.AtmMainFragment"
+        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.AtmMainFragment"
         android:label="@string/atm_title"
         tools:layout="@layout/fragment_atm_main" />
     <fragment
         android:id="@+id/nav_services_atm"
-        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.services.ServicesFragment"
+        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.ServicesFragment"
         android:label="@string/atm_service"
         tools:layout="@layout/fragment_services" />
     <fragment
         android:id="@+id/nav_clients_atm"
-        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.clients.ClientsFragment"
-        android:label="@string/atm_clients"
-        tools:layout="@layout/fragment_clients" />
+        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.CustomerFragment"
+        android:label="@string/atm_customer"
+        tools:layout="@layout/fragment_customer" />
     <fragment
         android:id="@+id/nav_contact_atm"
-        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.contact.ContactAtmFragment"
+        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.ContactAtmFragment"
         android:label="@string/atm_contact"
         tools:layout="@layout/fragment_contact_atm" />
     <fragment
         android:id="@+id/nav_about_atm"
-        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.about.AboutAtmFragment"
+        android:name="com.matheus.androidudemycourse.feature.atm_consultancy.fragments.AboutAtmFragment"
         android:label="@string/atm_about"
         tools:layout="@layout/fragment_about_atm" />
 </navigation>

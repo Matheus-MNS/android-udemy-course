@@ -19,13 +19,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <activity
             android:name=".feature.atm_consultancy.AtmConsultancyActivity"
             android:label="@string/atm_title"
             android:theme="@style/Theme.AtmConsultancy" />
+
     </application>
 
 </manifest>

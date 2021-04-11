@@ -51,12 +51,12 @@
     <string name="main">Principal</string>
     <string name="atm_about">Sobre</string>
     <string name="atm_service">Serviços</string>
-    <string name="atm_clients">Clientes</string>
+    <string name="atm_customer">Clientes</string>
     <string name="atm_contact">Contato</string>
-    <string name="service_title_1">Sistema de gestão de qualidade</string>
-    <string name="service_title_2">Indicador de desempenho</string>
+    <string name="first_service_title">Sistema de gestão de qualidade</string>
+    <string name="second_service_title">Indicador de desempenho</string>
     <string name="service_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
-    <string name="clients_text">Em mais de 15 anos de existência a ATM acumula experiência em serviços de consultoria para empresas nacionais e multinacionais de diversos portes, tendo atendido mais de 1000 empresas desde sua abertura.</string>
+    <string name="customer_text">Em mais de 15 anos de existência a ATM acumula experiência em serviços de consultoria para empresas nacionais e multinacionais de diversos portes, tendo atendido mais de 1000 empresas desde sua abertura.</string>
     <string name="submenu_title">Entre em contato</string>
     <string name="share">Compartilhar</string>
     <string name="atm_description">A ATM Consultoria tem como missão apoiar organizações que desejam alcaçar o sucesso atráves da excelência em gestão e da busca pela qualidade</string>

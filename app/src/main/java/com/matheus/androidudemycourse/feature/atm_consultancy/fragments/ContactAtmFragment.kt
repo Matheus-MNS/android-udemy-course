@@ -1,11 +1,10 @@
-package com.matheus.androidudemycourse.feature.atm_consultancy.fragments.contact
+package com.matheus.androidudemycourse.feature.atm_consultancy.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.matheus.androidudemycourse.R
 import com.matheus.androidudemycourse.databinding.FragmentContactAtmBinding
 
 class ContactAtmFragment : Fragment() {
@@ -19,6 +18,4 @@ class ContactAtmFragment : Fragment() {
         binding = FragmentContactAtmBinding.inflate(inflater,container,false)
         return binding.root
     }
-
-
 }

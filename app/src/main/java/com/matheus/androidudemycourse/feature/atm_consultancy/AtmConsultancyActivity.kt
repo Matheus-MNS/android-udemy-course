@@ -19,9 +19,9 @@ class AtmConsultancyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAtmConsultancyBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setSupportActionBar(binding.aapBarMainAtm.toolbarAtm)
+        setSupportActionBar(binding.appBarMainAtm.toolbarAtm)
 
-        binding.aapBarMainAtm.fab.setOnClickListener {
+        binding.appBarMainAtm.fab.setOnClickListener {
             sendEmail()
         }
 
@@ -49,7 +49,6 @@ class AtmConsultancyActivity : AppCompatActivity() {
             binding.drawerLayoutAtm.closeDrawer(GravityCompat.START)
             true
         }
-
     }
 
     private fun sendEmail() {
