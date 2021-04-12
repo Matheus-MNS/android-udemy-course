@@ -10,29 +10,36 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.SeekBar
 import com.matheus.androidudemycourse.R
-import com.matheus.androidudemycourse.databinding.FragmentMusicPlayerFragmentsBinding
+import com.matheus.androidudemycourse.databinding.FragmentMusicPlayerBinding
 
-class MusicPlayerFragments : Fragment() {
+class MusicPlayerFragment : Fragment() {
 
-    private lateinit var binding: FragmentMusicPlayerFragmentsBinding
+    private lateinit var binding: FragmentMusicPlayerBinding
     private lateinit var mediaPlayer: MediaPlayer
     private lateinit var audiomanger: AudioManager
+    private var musicId = 0
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
 
-        binding = FragmentMusicPlayerFragmentsBinding.inflate(inflater, container, false)
+        binding = FragmentMusicPlayerBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        mediaPlayer = MediaPlayer.create(context, R.raw.daft_punk_technologic)
+        musicId = R.raw.daft_punk_technologic
+        setupMusic()
         volumeController()
         setupButtonMedia()
+    }
+
+    private fun setupMusic() {
+        mediaPlayer = MediaPlayer.create(context, musicId)
     }
 
     private fun setupButtonMedia() {
@@ -87,7 +94,7 @@ class MusicPlayerFragments : Fragment() {
     private fun stopMusic() {
         if (mediaPlayer.isPlaying) {
             mediaPlayer.stop()
-            mediaPlayer = MediaPlayer.create(context, R.raw.daft_punk_technologic)
+            setupMusic()
         }
     }
 
