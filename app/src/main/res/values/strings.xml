@@ -64,4 +64,6 @@
     <string name="group_contact">Envie um email</string>
     <string name="group_social">Redes socias</string>
 
+    <!--    Media Player -->
+    <string name="media_player">Media Player</string>
 </resources>
