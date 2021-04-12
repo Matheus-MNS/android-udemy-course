@@ -13,7 +13,7 @@ import androidx.core.view.GravityCompat
 import androidx.navigation.ui.*
 import com.matheus.androidudemycourse.databinding.ActivityMainBinding
 import com.matheus.androidudemycourse.feature.atm_consultancy.AtmConsultancyActivity
-import com.matheus.androidudemycourse.feature.media_player.MediaPlayerActivity
+import com.matheus.androidudemycourse.feature.media_player.activities.MediaPlayerActivity
 
 class MainActivity : AppCompatActivity() {
 

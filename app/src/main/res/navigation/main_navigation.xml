@@ -36,5 +36,4 @@
         android:label="@string/heads_or_tails"
         tools:layout="@layout/fragment_heads_or_tails"/>
 
-
 </navigation>

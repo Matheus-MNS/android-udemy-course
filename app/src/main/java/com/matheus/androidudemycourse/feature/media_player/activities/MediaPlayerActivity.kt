@@ -1,10 +1,10 @@
-package com.matheus.androidudemycourse.feature.media_player
+package com.matheus.androidudemycourse.feature.media_player.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.matheus.androidudemycourse.R
 import com.matheus.androidudemycourse.databinding.ActivityMediaPlayerBinding
-import com.matheus.androidudemycourse.feature.media_player.fragments.MusicPlayerFragments
+import com.matheus.androidudemycourse.feature.media_player.fragments.MusicPlayerFragment
 
 class MediaPlayerActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMediaPlayerBinding
@@ -17,7 +17,7 @@ class MediaPlayerActivity : AppCompatActivity() {
 
         binding.musicButton.setOnClickListener {
             supportFragmentManager.beginTransaction().apply {
-                replace(R.id.mainFrameLayout,MusicPlayerFragments())
+                replace(R.id.mainFrameLayout,MusicPlayerFragment())
                 addToBackStack(null)
                 commit()
             }
