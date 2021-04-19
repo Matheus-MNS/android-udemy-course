@@ -5,7 +5,6 @@ import android.os.Bundle
 import com.matheus.androidudemycourse.R
 import com.matheus.androidudemycourse.databinding.ActivityMediaPlayerBinding
 import com.matheus.androidudemycourse.feature.media_player.fragments.MusicPlayerFragment
-import com.matheus.androidudemycourse.feature.media_player.fragments.VideoPlayerFragment
 
 class MediaPlayerActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMediaPlayerBinding
