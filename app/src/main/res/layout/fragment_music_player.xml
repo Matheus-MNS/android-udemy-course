@@ -4,49 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     tools:context=".feature.media_player.fragments.MusicPlayerFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/coverImageView"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/human_after_all_cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatSeekBar
         android:id="@+id/volumeSeekBar"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="15dp"
+        android:progressBackgroundTint="@color/indicator_color"
+        android:progressTint="@color/indicator_color"
+        android:thumb="@drawable/custom_thumb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/playMusicButton"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/play"
-        app:layout_constraintEnd_toStartOf="@id/pauseMusicButton"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/volumeSeekBar" />
+        app:layout_constraintTop_toBottomOf="@id/coverImageView" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/pauseMusicButton"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/pause"
-        app:layout_constraintEnd_toStartOf="@id/stopMusicButton"
-        app:layout_constraintStart_toEndOf="@id/playMusicButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_pause_music"
+        app:layout_constraintEnd_toStartOf="@+id/playMusicButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/volumeSeekBar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/playMusicButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/ic_play_music"
+        app:layout_constraintEnd_toStartOf="@+id/stopMusicButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pauseMusicButton"
         app:layout_constraintTop_toBottomOf="@id/volumeSeekBar" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/stopMusicButton"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:background="@drawable/stop"
+        android:background="@drawable/ic_stop_music"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/pauseMusicButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/playMusicButton"
         app:layout_constraintTop_toBottomOf="@id/volumeSeekBar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
