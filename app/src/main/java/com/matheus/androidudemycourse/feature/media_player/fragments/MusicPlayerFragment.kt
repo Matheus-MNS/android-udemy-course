@@ -32,7 +32,7 @@ class MusicPlayerFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        musicId = R.raw.daft_punk_technologic
+        musicId = R.raw.daft_punk_harder_better_faster
         setupMusic()
         volumeController()
         setupButtonMedia()
