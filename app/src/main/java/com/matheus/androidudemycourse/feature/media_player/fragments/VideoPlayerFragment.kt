@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import com.matheus.androidudemycourse.databinding.FragmentVideoBinding
 import com.matheus.androidudemycourse.feature.media_player.activities.VideoPlayerActivity
 
-class VideoFragment : Fragment() {
+class VideoPlayerFragment : Fragment() {
 
     private lateinit var binding: FragmentVideoBinding
     override fun onCreateView(
