@@ -6,17 +6,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.matheus.androidudemycourse.databinding.FragmentVideoBinding
+import com.matheus.androidudemycourse.databinding.FragmentVideoPlayerBinding
 import com.matheus.androidudemycourse.feature.media_player.activities.VideoPlayerActivity
 
 class VideoPlayerFragment : Fragment() {
 
-    private lateinit var binding: FragmentVideoBinding
+    private lateinit var binding: FragmentVideoPlayerBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentVideoBinding.inflate(inflater, container, false)
+        binding = FragmentVideoPlayerBinding.inflate(inflater, container, false)
         return binding.root
     }
 
