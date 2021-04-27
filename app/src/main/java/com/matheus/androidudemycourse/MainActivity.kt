@@ -13,6 +13,7 @@ import androidx.core.view.GravityCompat
 import androidx.navigation.ui.*
 import com.matheus.androidudemycourse.databinding.ActivityMainBinding
 import com.matheus.androidudemycourse.feature.atm_consultancy.AtmConsultancyActivity
+import com.matheus.androidudemycourse.feature.learn_english.acitivity.MainLearnEnglishActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -44,12 +45,18 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         binding.navView.setNavigationItemSelectedListener { menuItem ->
-            val id = menuItem.itemId
-            if (id == R.id.nav_atm_consultancy) {
-                val intent = Intent(this, AtmConsultancyActivity::class.java)
-                startActivity(intent)
-            } else {
-                NavigationUI.onNavDestinationSelected(menuItem, navController);
+            when (menuItem.itemId) {
+                R.id.nav_atm_consultancy -> {
+                    val intent = Intent(this, AtmConsultancyActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.nav_learn_english -> {
+                    val intent = Intent(this, MainLearnEnglishActivity::class.java)
+                    startActivity(intent)
+                }
+                else -> {
+                    NavigationUI.onNavDestinationSelected(menuItem, navController);
+                }
             }
             binding.drawerLayout.closeDrawer(GravityCompat.START)
             true

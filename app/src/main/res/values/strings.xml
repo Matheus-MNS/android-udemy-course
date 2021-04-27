@@ -63,5 +63,12 @@
     <string name="exit">Sair</string>
     <string name="group_contact">Envie um email</string>
     <string name="group_social">Redes socias</string>
+    <string name="title_activity_main_lear_eglish">MainLearEglishActivity</string>
+
+    <!--    Lear English -->
+    <string name="learn_english">Aprenda Inglês</string>
+    <string name="fragmet_animals">Animals</string>
+    <string name="fragmet_nubers">Numbers</string>
+    <string name="fragmet_vocals">Vocals</string>
 
 </resources>
