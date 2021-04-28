@@ -13,18 +13,12 @@ class VideoPlayerAdapter(fragmentManager: FragmentManager, private val activity:
 
     override fun getItem(position: Int): Fragment {
         return when (position) {
-            0 -> {
-                MusicPlayerFragment()
-            }
-            else -> {
-                VideoPlayerFragment()
-            }
+            0 -> MusicPlayerFragment()
+            else -> VideoPlayerFragment()
         }
     }
 
-    override fun getCount(): Int {
-        return 2
-    }
+    override fun getCount(): Int = 2
 
     override fun getPageTitle(position: Int): CharSequence {
         return when (position) {
