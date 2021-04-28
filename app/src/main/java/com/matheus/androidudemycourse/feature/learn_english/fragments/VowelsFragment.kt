@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.matheus.androidudemycourse.databinding.FragmentVocalsBinding
 
-class VocalsFragment : Fragment() {
+class VowelsFragment : Fragment() {
 
     private lateinit var binding: FragmentVocalsBinding
 

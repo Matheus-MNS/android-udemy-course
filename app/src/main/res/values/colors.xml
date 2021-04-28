@@ -8,5 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF1100</color>
+    <color name="colorPrimaryLearnEnglish">#795548</color>
+    <color name="colorPrimaryDarkLearnEnglish">#5D4037</color>
+    <color name="colorAccentDarkLearnEnglish">#5D4037</color>
 
 </resources>
