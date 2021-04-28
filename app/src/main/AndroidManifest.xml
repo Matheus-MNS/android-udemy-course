@@ -9,11 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidUdemyCourse">
-        <activity android:name=".feature.learn_english.acitivity.MainLearnEnglishActivity"></activity>
-        <activity
-            android:name=".feature.learn_english.MainLearEglishActivity"
-            android:label="@string/title_activity_main_lear_eglish"
-            android:theme="@style/Theme.AndroidUdemyCourse.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

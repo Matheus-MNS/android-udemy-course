@@ -15,9 +15,7 @@ class LearnEnglishAdapter(fragmentManager: FragmentManager, private val activity
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> AnimalsFragment()
-
             1 -> NumbersFragment()
-
             else -> VowelsFragment()
         }
     }
@@ -29,11 +27,8 @@ class LearnEnglishAdapter(fragmentManager: FragmentManager, private val activity
     override fun getPageTitle(position: Int): CharSequence {
         return when (position) {
             0 -> activity.getString(R.string.fragmet_animals)
-
             1 -> activity.getString(R.string.fragmet_nubers)
-
-            else -> activity.getString(R.string.fragmet_vocals)
-
+            else -> activity.getString(R.string.fragmet_vowels)
         }
     }
 }
