@@ -7,7 +7,6 @@ import android.view.View
 import android.widget.MediaController
 import android.widget.VideoView
 import com.matheus.androidudemycourse.R
-import com.matheus.androidudemycourse.databinding.ActivityMediaPlayerBinding
 import com.matheus.androidudemycourse.databinding.ActivityVideoPlayerBinding
 
 class VideoPlayerActivity : AppCompatActivity() {
@@ -23,10 +22,15 @@ class VideoPlayerActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
         val videoView = binding.playerVideoView
-        val mediaController = MediaController(this)
+        val mediaController = object : MediaController(this){
+            override fun hide() {
+                super.hide()
+                window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+            }
+        }
 
         mediaController.setAnchorView(videoView)
         handleVideoView(videoView, mediaController)
