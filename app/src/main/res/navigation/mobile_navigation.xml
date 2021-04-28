@@ -11,6 +11,11 @@
         android:label="@string/home"
         tools:layout="@layout/fragment_home" />
     <fragment
+        android:id="@+id/nav_learn_english"
+        android:name="com.matheus.androidudemycourse.feature.learn_english.fragments.MainLearnEnglishFragment"
+        android:label="@string/learn_english"
+        tools:layout="@layout/fragment_main_learn_english" />
+    <fragment
         android:id="@+id/nav_sort_number"
         android:name="com.matheus.androidudemycourse.feature.sort_number.SortNumberFragment"
         android:label="@string/sort_number"

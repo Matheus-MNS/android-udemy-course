@@ -5,18 +5,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.matheus.androidudemycourse.databinding.FragmentVocalsBinding
+import com.matheus.androidudemycourse.databinding.FragmentVowelsBinding
 
-class VocalsFragment : Fragment() {
+class VowelsFragment : Fragment() {
 
-    private lateinit var binding: FragmentVocalsBinding
+    private lateinit var binding: FragmentVowelsBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-       binding = FragmentVocalsBinding.inflate(inflater,container,false)
+       binding = FragmentVowelsBinding.inflate(inflater,container,false)
         return binding.root
     }
 
