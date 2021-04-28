@@ -67,8 +67,8 @@
 
     <!--    Learn English -->
     <string name="learn_english">Aprenda Inglês</string>
-    <string name="fragmet_animals">Animals</string>
-    <string name="fragmet_nubers">Numbers</string>
-    <string name="fragmet_vowels">Vowels</string>
+    <string name="fragment_animals">Animals</string>
+    <string name="fragment_nubers">Numbers</string>
+    <string name="fragment_vowels">Vowels</string>
 
 </resources>
