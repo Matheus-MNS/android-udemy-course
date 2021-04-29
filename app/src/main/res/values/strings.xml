@@ -63,6 +63,13 @@
     <string name="exit">Sair</string>
     <string name="group_contact">Envie um email</string>
     <string name="group_social">Redes socias</string>
+    <string name="title_activity_main_lear_eglish">MainLearEglishActivity</string>
+
+    <!--    Learn English -->
+    <string name="learn_english">Aprenda Inglês</string>
+    <string name="fragment_animals">Animals</string>
+    <string name="fragment_nubers">Numbers</string>
+    <string name="fragment_vowels">Vowels</string>
 
     <!--    Media Player -->
     <string name="media_player">Media Player</string>

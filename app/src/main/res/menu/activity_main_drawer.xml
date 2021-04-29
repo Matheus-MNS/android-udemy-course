@@ -9,6 +9,10 @@
             android:icon="@drawable/ic_main"
             android:title="@string/home" />
         <item
+            android:id="@+id/nav_learn_english"
+            android:icon="@drawable/ic_language"
+            android:title="@string/learn_english" />
+        <item
             android:id="@+id/nav_media_player"
             android:icon="@drawable/ic_video_and_music"
             android:title="@string/media_player" />
