@@ -8,6 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF1100</color>
+    <color name="gradiente_start">#000000</color>
+    <color name="gradiente_end">#434343</color>
+    <color name="tab_layout_background">#00D95A</color>
+    <color name="indicator_color">#09AF4A</color>
     <color name="colorPrimaryLearnEnglish">#795548</color>
     <color name="colorPrimaryDarkLearnEnglish">#5D4037</color>
     <color name="colorAccentDarkLearnEnglish">#5D4037</color>

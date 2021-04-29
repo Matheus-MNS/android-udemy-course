@@ -8,6 +8,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/fragmet_nubers" />
+        android:text="@string/fragment_nubers" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,6 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/fragmet_animals" />
+        android:text="@string/fragment_animals" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,15 +20,13 @@ class LearnEnglishAdapter(fragmentManager: FragmentManager, private val activity
         }
     }
 
-    override fun getCount(): Int {
-        return 3
-    }
+    override fun getCount() = 3
 
     override fun getPageTitle(position: Int): CharSequence {
         return when (position) {
-            0 -> activity.getString(R.string.fragmet_animals)
-            1 -> activity.getString(R.string.fragmet_nubers)
-            else -> activity.getString(R.string.fragmet_vocals)
+            0 -> activity.getString(R.string.fragment_animals)
+            1 -> activity.getString(R.string.fragment_nubers)
+            else -> activity.getString(R.string.fragment_vowels)
         }
     }
 }

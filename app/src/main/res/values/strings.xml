@@ -65,10 +65,18 @@
     <string name="group_social">Redes socias</string>
     <string name="title_activity_main_lear_eglish">MainLearEglishActivity</string>
 
-    <!--    Lear English -->
+    <!--    Learn English -->
     <string name="learn_english">Aprenda Inglês</string>
-    <string name="fragmet_animals">Animals</string>
-    <string name="fragmet_nubers">Numbers</string>
-    <string name="fragmet_vocals">Vocals</string>
+    <string name="fragment_animals">Animals</string>
+    <string name="fragment_nubers">Numbers</string>
+    <string name="fragment_vowels">Vowels</string>
+
+    <!--    Media Player -->
+    <string name="media_player">Media Player</string>
+    <string name="music">Music</string>
+    <string name="video">Video</string>
+    <string name="title_video">Rick and Morty</string>
+    <string name="subtitle_video">2018 1 Temporada</string>
+    <string name="storyline_video">Rick Sanchez é um cientista genial e alcoólatra que foi morar com a família de sua filha (Beth), uma cirurgiã cardíaca de equinos. Ele divide seu tempo entre desenvolver projetos altamente tecnológicos em seu laboratório (garagem da casa de Beth) e levar seu neto de 14 anos Morty em aventuras perigosas e surreais pelo Multiverso. Combinados com tensões preexistentes dentro da família, esses eventos causam ao sensível Morty muito angústia em casa e na escola.</string>
 
 </resources>
