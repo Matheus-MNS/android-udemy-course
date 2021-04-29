@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".feature.learn_english.fragments.MainLearnEnglishFragment">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/learnEnglishToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_primary_learn_english"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Theme.AppCompat.Light" />
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/learnEnglishTabLayout"
         android:layout_width="match_parent"
@@ -13,7 +23,7 @@
         android:background="@color/purple_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/learnEnglishToolbar"
         app:tabGravity="fill"
         app:tabIndicator="@color/white"
         app:tabMaxWidth="0dp"
@@ -27,6 +37,4 @@
         android:layout_height="match_parent"
         android:layout_marginTop="47dp"
         app:layout_constraintTop_toBottomOf="@id/learnEnglishTabLayout" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
