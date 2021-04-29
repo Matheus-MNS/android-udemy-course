@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feature.media_player.activities.MediaPlayerActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/viewPagerTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_layout_background"
+        app:tabGravity="fill"
+        app:tabIndicator="@color/indicator_color"
+        app:tabMaxWidth="0dp"
+        app:tabMinWidth="0dp"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/white" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewPagerTab"
+        android:background="@drawable/gradient_background" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

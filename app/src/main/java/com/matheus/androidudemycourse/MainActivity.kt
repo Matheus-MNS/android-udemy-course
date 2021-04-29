@@ -13,6 +13,7 @@ import androidx.core.view.GravityCompat
 import androidx.navigation.ui.*
 import com.matheus.androidudemycourse.databinding.ActivityMainBinding
 import com.matheus.androidudemycourse.feature.atm_consultancy.AtmConsultancyActivity
+import com.matheus.androidudemycourse.feature.media_player.activities.MediaPlayerActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_home,
+                R.id.nav_media_player,
                 R.id.nav_atm_consultancy,
                 R.id.nav_heads_or_tails,
                 R.id.nav_alcohol_or_gasoline,
@@ -47,6 +49,10 @@ class MainActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.nav_atm_consultancy -> {
                     val intent = Intent(this, AtmConsultancyActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.nav_media_player -> {
+                    val intent = Intent(this, MediaPlayerActivity::class.java)
                     startActivity(intent)
                 }
                 else -> {
