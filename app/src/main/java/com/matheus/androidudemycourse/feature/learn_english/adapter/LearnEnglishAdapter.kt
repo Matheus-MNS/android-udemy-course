@@ -20,9 +20,7 @@ class LearnEnglishAdapter(fragmentManager: FragmentManager, private val activity
         }
     }
 
-    override fun getCount(): Int {
-        return 3
-    }
+    override fun getCount() = 3  
 
     override fun getPageTitle(position: Int): CharSequence {
         return when (position) {
