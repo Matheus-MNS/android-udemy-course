@@ -20,7 +20,8 @@
         android:id="@+id/learnEnglishTabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/purple_700"
+        android:clickable="true"
+        android:background="@color/color_primary_learn_english"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/learnEnglishToolbar"
@@ -29,7 +30,8 @@
         app:tabMaxWidth="0dp"
         app:tabMinWidth="0dp"
         app:tabMode="fixed"
-        app:tabTextColor="@color/white" />
+        app:tabTextColor="@color/white"
+        android:focusable="true" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/learnEnglishViewPager"
