@@ -12,5 +12,8 @@
     <color name="gradiente_end">#434343</color>
     <color name="tab_layout_background">#00D95A</color>
     <color name="indicator_color">#09AF4A</color>
+    <color name="color_primary_learn_english">#795548</color>
+    <color name="color_primary_dark_learn_english">#5D4037</color>
+    <color name="color_accent_dark_learnEnglish">#5D4037</color>
 
 </resources>
