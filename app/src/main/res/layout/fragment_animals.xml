@@ -13,12 +13,12 @@
         android:layout_height="125dp"
         android:src="@drawable/dog"
         app:layout_constraintBottom_toTopOf="@id/lionImageView"
-        app:layout_constraintEnd_toStartOf="@id/catImageButton"
+        app:layout_constraintEnd_toStartOf="@id/catImageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/catImageButton"
+        android:id="@+id/catImageView"
         android:layout_width="125dp"
         android:layout_height="125dp"
         android:src="@drawable/cat"
@@ -47,7 +47,7 @@
         app:layout_constraintBottom_toTopOf="@id/cowImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/lionImageView"
-        app:layout_constraintTop_toBottomOf="@id/catImageButton" />
+        app:layout_constraintTop_toBottomOf="@id/catImageView" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/sheepImageView"
