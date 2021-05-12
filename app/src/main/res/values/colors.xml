@@ -15,6 +15,7 @@
     <color name="color_primary_learn_english">#795548</color>
     <color name="color_primary_dark_learn_english">#5D4037</color>
     <color name="color_accent_dark_learnEnglish">#5D4037</color>
+    <color name="background_fragment_numbers">#E9D0A1</color>
     <color name="background_fragment_vowels">#F6BB75</color>
 
 </resources>
