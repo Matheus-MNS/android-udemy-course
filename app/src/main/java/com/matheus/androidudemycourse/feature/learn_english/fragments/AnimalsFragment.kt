@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import com.matheus.androidudemycourse.R
 import com.matheus.androidudemycourse.databinding.FragmentAnimalsBinding
 
-class AnimalsFragment : Fragment(), View.OnClickListener {
+class AnimalsFragment : Fragment() {
 
     private lateinit var binding: FragmentAnimalsBinding
     private lateinit var mediaPlayer: MediaPlayer
@@ -26,33 +26,22 @@ class AnimalsFragment : Fragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        appllyClick()
+        applyClick()
     }
 
-    private fun appllyClick() {
+    private fun applyClick() {
         with(binding) {
-            dogImageView.setOnClickListener(this@AnimalsFragment)
-            catImageButton.setOnClickListener(this@AnimalsFragment)
-            lionImageView.setOnClickListener(this@AnimalsFragment)
-            monkeyImageView.setOnClickListener(this@AnimalsFragment)
-            sheepImageView.setOnClickListener(this@AnimalsFragment)
-            cowImageView.setOnClickListener(this@AnimalsFragment)
+            dogImageView.setOnClickListener { playSound(R.raw.dog) }
+            catImageView.setOnClickListener { playSound(R.raw.cat) }
+            lionImageView.setOnClickListener { playSound(R.raw.lion) }
+            monkeyImageView.setOnClickListener { playSound(R.raw.monkey) }
+            sheepImageView.setOnClickListener { playSound(R.raw.sheep) }
+            cowImageView.setOnClickListener { playSound(R.raw.cow) }
         }
     }
 
-    override fun onClick(view: View) {
-        when (view.id) {
-            R.id.dogImageView -> playSound(R.raw.dog)
-            R.id.catImageButton -> playSound(R.raw.cat)
-            R.id.lionImageView -> playSound(R.raw.lion)
-            R.id.monkeyImageView -> playSound(R.raw.monkey)
-            R.id.sheepImageView -> playSound(R.raw.sheep)
-            R.id.cowImageView -> playSound(R.raw.cow)
-        }
-    }
-
-    private fun playSound(Sound: Int){
-        mediaPlayer = MediaPlayer.create(activity,Sound)
+    private fun playSound(Sound: Int) {
+        mediaPlayer = MediaPlayer.create(activity, Sound)
 
         mediaPlayer.apply {
             start()

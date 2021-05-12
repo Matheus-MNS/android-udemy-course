@@ -7,8 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.matheus.androidudemycourse.databinding.FragmentVowelsBinding
-import com.matheus.androidudemycourse.feature.learn_english.activity.VideoVolwesActivity
-import com.matheus.androidudemycourse.feature.media_player.activities.VideoPlayerActivity
+import com.matheus.androidudemycourse.feature.learn_english.activity.VideoVowelsActivity
 
 class VowelsFragment : Fragment() {
 
@@ -32,7 +31,7 @@ class VowelsFragment : Fragment() {
     }
 
     private fun navigateToVideoPlayerActivity() {
-        val intent = Intent(activity, VideoVolwesActivity::class.java)
+        val intent = Intent(activity, VideoVowelsActivity::class.java)
         startActivity(intent)
     }
 

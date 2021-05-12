@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".feature.learn_english.activity.VideoVolwesActivity">
+    tools:context=".feature.learn_english.activity.VideoVowelsActivity">
 
     <VideoView
-        android:id="@+id/playerVolwesVideoView"
+        android:id="@+id/player_vowels_video_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

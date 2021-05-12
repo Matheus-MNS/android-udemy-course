@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import com.matheus.androidudemycourse.R
 import com.matheus.androidudemycourse.databinding.FragmentNumbersBinding
 
-class NumbersFragment : Fragment(), View.OnClickListener {
+class NumbersFragment : Fragment() {
 
     private lateinit var binding: FragmentNumbersBinding
     private lateinit var mediaPlayer: MediaPlayer
@@ -26,28 +26,17 @@ class NumbersFragment : Fragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        appllyClick()
+        applyClick()
     }
 
-    private fun appllyClick() {
+    private fun applyClick() {
         with(binding) {
-            numberOneImageView.setOnClickListener(this@NumbersFragment)
-            numberTwoImageView.setOnClickListener(this@NumbersFragment)
-            numberThreeImageView.setOnClickListener(this@NumbersFragment)
-            numberFourImageView.setOnClickListener(this@NumbersFragment)
-            numberFiveImageView.setOnClickListener(this@NumbersFragment)
-            numberSixImageView.setOnClickListener(this@NumbersFragment)
-        }
-    }
-
-    override fun onClick(view: View) {
-        when (view.id) {
-            R.id.numberOneImageView -> playSound(R.raw.one)
-            R.id.numberTwoImageView -> playSound(R.raw.two)
-            R.id.numberThreeImageView -> playSound(R.raw.three)
-            R.id.numberFourImageView -> playSound(R.raw.four)
-            R.id.numberFiveImageView -> playSound(R.raw.five)
-            R.id.numberSixImageView -> playSound(R.raw.six)
+            numberOneImageView.setOnClickListener { playSound(R.raw.one) }
+            numberTwoImageView.setOnClickListener { playSound(R.raw.two) }
+            numberThreeImageView.setOnClickListener { playSound(R.raw.three) }
+            numberFourImageView.setOnClickListener { playSound(R.raw.four) }
+            numberFiveImageView.setOnClickListener { playSound(R.raw.five) }
+            numberSixImageView.setOnClickListener { playSound(R.raw.six) }
         }
     }
 

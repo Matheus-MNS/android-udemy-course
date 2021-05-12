@@ -7,13 +7,15 @@ import android.view.View
 import android.widget.MediaController
 import android.widget.VideoView
 import com.matheus.androidudemycourse.R
-import com.matheus.androidudemycourse.databinding.ActivityVideoVolwesBinding
+import com.matheus.androidudemycourse.databinding.ActivityVideoVowelsBinding
 
-class VideoVolwesActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityVideoVolwesBinding
+class VideoVowelsActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityVideoVowelsBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityVideoVolwesBinding.inflate(layoutInflater)
+        binding = ActivityVideoVowelsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setupView()
@@ -22,7 +24,7 @@ class VideoVolwesActivity : AppCompatActivity() {
     private fun setupView() {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
-        val videoView = binding.playerVolwesVideoView
+        val videoView = binding.playerVowelsVideoView
         val mediaController = object : MediaController(this){
             override fun hide() {
                 super.hide()
