@@ -1,13 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_fragment_vowels"
     tools:context=".feature.learn_english.fragments.VowelsFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/fragment_vowels" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/videoThumbnailImageView"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vowels_video_thumbail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/playVideoImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/play_video"
+        app:layout_constraintBottom_toBottomOf="@id/videoThumbnailImageView"
+        app:layout_constraintEnd_toEndOf="@id/videoThumbnailImageView"
+        app:layout_constraintStart_toStartOf="@id/videoThumbnailImageView"
+        app:layout_constraintTop_toTopOf="@id/videoThumbnailImageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/videoTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/vowels_video_title"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/videoThumbnailImageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/descriptionVideoTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/vowels_video_description"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/videoTitleTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
