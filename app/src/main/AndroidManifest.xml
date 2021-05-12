@@ -31,6 +31,10 @@
             android:name=".feature.media_player.activities.VideoPlayerActivity"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".feature.learn_english.activity.VideoVowelsActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Design.NoActionBar" />
     </application>
 
 </manifest>

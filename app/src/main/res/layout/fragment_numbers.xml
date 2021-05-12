@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_fragment_numbers"
+    tools:context=".feature.learn_english.fragments.NumbersFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/numberOneImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/one"
+        app:layout_constraintBottom_toTopOf="@+id/numberThreeImageView"
+        app:layout_constraintEnd_toStartOf="@+id/numberTwoImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/numberTwoImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/two"
+        app:layout_constraintBottom_toTopOf="@+id/numberFourImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/numberOneImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/numberThreeImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/three"
+        app:layout_constraintBottom_toTopOf="@+id/numberFiveImageView"
+        app:layout_constraintEnd_toStartOf="@+id/numberFourImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberOneImageView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/numberFourImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/four"
+        app:layout_constraintBottom_toTopOf="@+id/numberSixImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/numberThreeImageView"
+        app:layout_constraintTop_toBottomOf="@id/numberTwoImageView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/numberFiveImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/five"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/numberSixImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberThreeImageView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/numberSixImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/six"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/numberFiveImageView"
+        app:layout_constraintTop_toBottomOf="@id/numberFourImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

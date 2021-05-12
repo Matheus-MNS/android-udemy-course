@@ -63,6 +63,16 @@
     <string name="exit">Sair</string>
     <string name="group_contact">Envie um email</string>
     <string name="group_social">Redes socias</string>
+    <string name="title_activity_main_lear_eglish">MainLearEglishActivity</string>
+
+    <!--    Learn English -->
+    <string name="learn_english">Aprenda Inglês</string>
+    <string name="fragment_animals">Animals</string>
+    <string name="fragment_nubers">Numbers</string>
+    <string name="fragment_vowels">Vowels</string>
+    <string name="vowels_video_title">The Short Vowel Song</string>
+    <string name="vowels_video_description">Best Phonics é uma série fonética de cinco níveis para alunos iniciantes de inglês. A matéria fácil e sistemático desta série ajudará os alunos a desenvolver habilidades fonéticas essenciais de uma forma divertida e a entrar no mundo da leitura com confiança.</string>
+
 
     <!--    Media Player -->
     <string name="media_player">Media Player</string>

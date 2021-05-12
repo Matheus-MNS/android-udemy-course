@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_fragment_animals"
+    tools:context=".feature.learn_english.fragments.AnimalsFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/dogImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/dog"
+        app:layout_constraintBottom_toTopOf="@id/lionImageView"
+        app:layout_constraintEnd_toStartOf="@id/catImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/catImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/cat"
+        app:layout_constraintBottom_toTopOf="@id/monkeyImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dogImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/lionImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/lion"
+        app:layout_constraintBottom_toTopOf="@id/sheepImageView"
+        app:layout_constraintEnd_toStartOf="@id/monkeyImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dogImageView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/monkeyImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/monkey"
+        app:layout_constraintBottom_toTopOf="@id/cowImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lionImageView"
+        app:layout_constraintTop_toBottomOf="@id/catImageView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/sheepImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/sheep"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cowImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lionImageView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cowImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/cow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sheepImageView"
+        app:layout_constraintTop_toBottomOf="@id/monkeyImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
