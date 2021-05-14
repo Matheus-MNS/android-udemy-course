@@ -1,12 +1,11 @@
 package com.matheus.androidudemycourse.feature.heads_or_tails
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.activity.OnBackPressedCallback
+import android.view.*
+import android.widget.Toolbar
+import androidx.activity.addCallback
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import com.matheus.androidudemycourse.R
 import com.matheus.androidudemycourse.databinding.FragmentHeadsOrTailsResultBinding
 import kotlin.random.Random
@@ -27,12 +26,8 @@ class HeadsOrTailsResultFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        handleOnBackPressed()
+        setHasOptionsMenu(true)
         flipCoin()
-
-        binding.returnButon.setOnClickListener {
-            popBackStack()
-        }
     }
 
     private fun flipCoin() {
@@ -44,20 +39,13 @@ class HeadsOrTailsResultFragment : Fragment() {
             binding.resultCoinImageView.setImageResource(R.drawable.tails_coin)
     }
 
-    private fun handleOnBackPressed() {
-        activity?.onBackPressedDispatcher?.addCallback(
-            viewLifecycleOwner,
-            object : OnBackPressedCallback(true) {
-                override fun handleOnBackPressed() {
-                    popBackStack()
-                }
-            })
-    }
-
-    private fun popBackStack() {
-        activity?.supportFragmentManager?.popBackStack(
-            "HeadsOrTailsResultFragment",
-            FragmentManager.POP_BACK_STACK_INCLUSIVE
-        )
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                activity?.onBackPressed()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }

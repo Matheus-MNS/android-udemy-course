@@ -37,8 +37,8 @@
         tools:layout="@layout/fragment_alcohol_or_gasoline" />
     <fragment
         android:id="@+id/nav_heads_or_tails"
-        android:name="com.matheus.androidudemycourse.feature.heads_or_tails.HeadsOrTailsFragment"
-        android:label="@string/heads_or_tails"
-        tools:layout="@layout/fragment_heads_or_tails"/>
+        android:name="com.matheus.androidudemycourse.feature.heads_or_tails.HeadsOrTailsMainFragment"
+        android:label=""
+        tools:layout="@layout/fragment_main_heads_or_tails" />
 
 </navigation>
