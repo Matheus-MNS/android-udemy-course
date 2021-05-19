@@ -3,14 +3,12 @@ package com.matheus.androidudemycourse
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import com.google.android.material.snackbar.Snackbar
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import androidx.navigation.findNavController
 import androidx.navigation.ui.*
+import com.google.android.material.snackbar.Snackbar
 import com.matheus.androidudemycourse.databinding.ActivityMainBinding
 import com.matheus.androidudemycourse.feature.atm_consultancy.AtmConsultancyActivity
 import com.matheus.androidudemycourse.feature.media_player.activities.MediaPlayerActivity
