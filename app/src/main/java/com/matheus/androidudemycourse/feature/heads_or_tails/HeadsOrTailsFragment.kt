@@ -1,11 +1,9 @@
 package com.matheus.androidudemycourse.feature.heads_or_tails
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.fragment.app.Fragment
-import com.matheus.androidudemycourse.R
+import androidx.navigation.fragment.findNavController
 import com.matheus.androidudemycourse.databinding.FragmentHeadsOrTailsBinding
 
 
@@ -27,10 +25,9 @@ class HeadsOrTailsFragment : Fragment() {
 
         binding.playButton.setOnClickListener {
 
-            activity?.supportFragmentManager?.beginTransaction()
-                ?.replace(R.id.nav_host_fragment, HeadsOrTailsResultFragment())
-                ?.addToBackStack("HeadsOrTailsResultFragment")
-                ?.commit()
+            findNavController().navigate(
+                HeadsOrTailsFragmentDirections.actionHeadsOrTailsFragmentToHeadsOrTailsResultFragment()
+            )
         }
     }
 }
