@@ -1,4 +1,5 @@
 package com.matheus.androidudemycourse.feature.my_annotations
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,7 +11,6 @@ import com.matheus.androidudemycourse.databinding.FragmentMyAnnotationsBinding
 import com.matheus.androidudemycourse.utils.VisibilityActionEnum
 import com.matheus.androidudemycourse.utils.changeStatusBarColor
 import com.matheus.androidudemycourse.utils.handleActionBarVisibility
-
 
 class MyAnnotationsFragment : Fragment() {
 
@@ -33,18 +33,14 @@ class MyAnnotationsFragment : Fragment() {
         binding.backHomeImageView.setOnClickListener {
             activity?.onBackPressed()
         }
-
-
     }
 
     private fun setupView() {
         changeStatusBarColor(R.color.dark_brown)
 
         handleActionBarVisibility(VisibilityActionEnum.HIDE)
-        with(binding) {
-            myAnnotationsToolbar.setNavigationOnClickListener {
-                activity?.onBackPressed()
-            }
+        binding.myAnnotationsToolbar.setNavigationOnClickListener {
+            activity?.onBackPressed()
         }
     }
 
