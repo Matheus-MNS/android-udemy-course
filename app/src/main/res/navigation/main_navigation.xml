@@ -11,6 +11,11 @@
         android:label="@string/home"
         tools:layout="@layout/fragment_home" />
     <fragment
+        android:id="@+id/nav_my_annotations"
+        android:name="com.matheus.androidudemycourse.feature.my_annotations.MyAnnotationsFragment"
+        android:label="@string/my_annotations"
+        tools:layout="@layout/fragment_my_annotations" />
+    <fragment
         android:id="@+id/nav_learn_english"
         android:name="com.matheus.androidudemycourse.feature.learn_english.fragments.MainLearnEnglishFragment"
         android:label="@string/learn_english"

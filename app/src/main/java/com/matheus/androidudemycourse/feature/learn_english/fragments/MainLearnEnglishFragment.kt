@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import com.matheus.androidudemycourse.databinding.FragmentMainLearnEnglishBinding
 import com.matheus.androidudemycourse.R
 import com.matheus.androidudemycourse.feature.learn_english.adapter.LearnEnglishAdapter
@@ -39,7 +38,7 @@ class MainLearnEnglishFragment : Fragment() {
     }
 
     private fun setupView() {
-        changeStatusBarColor(R.color.color_primary_dark_learn_english)
+        changeStatusBarColor(R.color.dark_brown)
 
         handleActionBarVisibility(HIDE)
         with(binding) {
