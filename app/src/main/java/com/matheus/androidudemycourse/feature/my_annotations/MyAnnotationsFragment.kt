@@ -47,36 +47,16 @@ class MyAnnotationsFragment : Fragment() {
         getSharedPreference()
     }
 
-    private fun validateEmpty() {
-        if (binding.annotationsTextInput.text.isNullOrEmpty()) {
-            snackBar(requireView(), R.string.empty_field, Snackbar.LENGTH_LONG)
-        } else {
-            saveSharedPreferences()
-            snackBar(requireView(), R.string.save_annotations, Snackbar.LENGTH_LONG)
-        }
-    }
+//    private fun validateEmpty() {
+//        if (binding.annotationsTextInput.text.isNullOrEmpty()) {
+//            snackBar(requireView(), R.string.empty_field, Snackbar.LENGTH_LONG)
+//        } else {
+//            saveSharedPreferences()
+//            snackBar(requireView(), R.string.save_annotations, Snackbar.LENGTH_LONG)
+//        }
+//    }
 
-    private fun getSharedPreference() {
-        sharedPreferences = requireActivity().getSharedPreferences(FILE_PREFERENCE, 0)
-        if (sharedPreferences.contains(NOTE_KEY)) {
-            val recoveryNote =
-                sharedPreferences.getString(NOTE_KEY, getString(R.string.note_not_found))
 
-            if (recoveryNote != null) {
-                binding.annotationsTextInput.setText(recoveryNote)
-            }
-        }
-    }
-
-    private fun saveSharedPreferences() {
-        val note = binding.annotationsTextInput.text.toString()
-
-        sharedPreferences = requireActivity().getSharedPreferences(FILE_PREFERENCE, 0)
-        sharedPreferences.edit().apply {
-            putString(NOTE_KEY, note)
-            apply()
-        }
-    }
 
     private fun setupView() {
         changeStatusBarColor(R.color.dark_brown)
