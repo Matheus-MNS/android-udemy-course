@@ -15,7 +15,7 @@ import com.matheus.androidudemycourse.utils.changeStatusBarColor
 import com.matheus.androidudemycourse.utils.handleActionBarVisibility
 import com.matheus.androidudemycourse.utils.snackBar
 
-const val FILE_PREFERENCE = "filePreference"
+
 const val NOTE_KEY = "note"
 
 class MyAnnotationsFragment : Fragment() {
@@ -41,10 +41,9 @@ class MyAnnotationsFragment : Fragment() {
             activity?.onBackPressed()
         }
         binding.saveAnnotationsFloatButton.setOnClickListener {
-            validateEmpty()
+            //validateEmpty()
         }
 
-        getSharedPreference()
     }
 
 //    private fun validateEmpty() {
