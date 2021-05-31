@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.Observer
 import com.matheus.androidudemycourse.R
 import com.matheus.androidudemycourse.databinding.FragmentMyAnnotationsBinding
 import com.matheus.androidudemycourse.utils.VisibilityActionEnum
@@ -30,6 +31,7 @@ class MyAnnotationsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setupView()
+        handleObserver()
 
         with(binding) {
             backHomeImageView.setOnClickListener {
@@ -45,9 +47,19 @@ class MyAnnotationsFragment : Fragment() {
         changeStatusBarColor(R.color.dark_brown)
         handleActionBarVisibility(VisibilityActionEnum.HIDE)
 
-        binding.myAnnotationsToolbar.setNavigationOnClickListener {
-            activity?.onBackPressed()
+        with(binding) {
+            myAnnotationsToolbar.setNavigationOnClickListener {
+                activity?.onBackPressed()
+            }
         }
+    }
+
+    private fun handleObserver() {
+        val note = Observer<String> {
+            binding.annotationsTextInput.setText(it)
+        }
+
+        viewModel.note.observe(viewLifecycleOwner, note)
     }
 
     override fun onDestroy() {

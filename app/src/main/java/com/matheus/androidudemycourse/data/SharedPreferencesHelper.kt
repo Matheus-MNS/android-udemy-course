@@ -1,10 +1,11 @@
 package com.matheus.androidudemycourse.data
 
 import android.content.Context
+import com.matheus.androidudemycourse.R
 
 const val FILE_PREFERENCE = "filePreference"
 
-class SharedPreferencesHelper(context: Context) {
+class SharedPreferencesHelper(private val context: Context) {
 
     private val sharedPreferences =
         context.getSharedPreferences(FILE_PREFERENCE, Context.MODE_PRIVATE)
@@ -15,6 +16,6 @@ class SharedPreferencesHelper(context: Context) {
     }
 
     fun getStringFromPreferences(key: String) = sharedPreferences.run {
-        getString(key, null)
+        getString(key,context.getString(R.string.empty_string) )
     }
 }
