@@ -85,7 +85,7 @@
 
     <!--    My Annotions -->
     <string name="my_annotations">Minhas Anotações</string>
-    <string name="empty_field">Preencha a anotação</string>
-    <string name="save_annotations">Modificações salvas</string>
-    <string name="note_not_found">Nota não encontrada</string>
+    <string name="empty_field_error_message">Preencha a anotação</string>
+    <string name="annotations_saved_message">Modificações salvas</string>
+    <string name="annotations_not_found_message">Nota não encontrada</string>
 </resources>

@@ -47,11 +47,10 @@ class MyAnnotationsFragment : Fragment() {
         changeStatusBarColor(R.color.dark_brown)
         handleActionBarVisibility(VisibilityActionEnum.HIDE)
 
-        with(binding) {
-            myAnnotationsToolbar.setNavigationOnClickListener {
-                activity?.onBackPressed()
-            }
+        binding.myAnnotationsToolbar.setNavigationOnClickListener {
+            activity?.onBackPressed()
         }
+
     }
 
     private fun handleObserver() {
