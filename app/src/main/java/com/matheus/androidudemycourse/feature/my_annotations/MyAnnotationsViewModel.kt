@@ -14,6 +14,10 @@ class MyAnnotationsViewModel(
         MutableLiveData<String>()
     }
 
+    val error: MutableLiveData<Boolean> by lazy {
+        MutableLiveData<Boolean>()
+    }
+
     init {
         note.value = sharedPreferencesHelper.getStringFromPreferences(NOTE_KEY)
     }
@@ -21,6 +25,9 @@ class MyAnnotationsViewModel(
     fun saveStringOnPreferences(string: String) {
         if (string.isNotEmpty()) {
             sharedPreferencesHelper.saveStringOnPreferences(NOTE_KEY, string)
+            error.value = false
+        } else {
+            error.value = true
         }
     }
 }
