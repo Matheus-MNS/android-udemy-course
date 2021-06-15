@@ -19,4 +19,7 @@
     <color name="background_fragment_numbers">#E9D0A1</color>
     <color name="background_fragment_vowels">#F6BB75</color>
     <color name="light_yellow">#FFFCC6</color>
+    <color name="dark_red">#A00000</color>
+    <color name="light_red">#B40000</color>
+
 </resources>

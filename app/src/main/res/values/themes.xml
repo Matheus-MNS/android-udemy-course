@@ -28,6 +28,11 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Theme.TaskList" parent="Theme.AndroidUdemyCourse.NoActionBar">
+        <item name="colorPrimary">@color/dark_red</item>
+        <item name="colorAccent">@color/light_red</item>
+    </style>
+
     <style name="Theme.AndroidUdemyCourse.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
